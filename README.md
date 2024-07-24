@@ -22,7 +22,6 @@ This is the technical test for inditex
 
 
 
-
 # To execute:
 1) .\mvnw install(on project's directory)
 2) .\mvnw spring-boot:run
@@ -31,8 +30,9 @@ This is the technical test for inditex
 
 # Extra
 - this project was made with spring boot 4.5.8, loombook, jpa, junit, mockito, java 17, h2 and swagger 
-- on test folder you can find the you can find multiple test made on service, repository and controller
-- on PriceControllerTest.class are made the five test cases on the file
+- is made with a simple api rest architecture and folloowing clean code and solid principles
+- on test folder you can find multiple test separated by service, repository and controller
+- on PriceControllerTest.class you can find the five test cases presented on the document or you can tested by yourself using the swagger-ui(http://localhost:8080/swagger-ui.html)
 
 
 
