@@ -4,7 +4,7 @@ spring:
   datasource:
     driver-class-name: org.h2.Driver
     username: a
-    password:
+    password: a
     url: "jdbc:h2:mem:inditex;DB_CLOSE_ON_EXIT=FALSE"
   h2:
     console:

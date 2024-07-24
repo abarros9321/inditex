@@ -1,15 +1,12 @@
 package com.prueba.inditex.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.prueba.inditex.persistence.entity.Price;
-import com.prueba.inditex.service.PriceService;
 import com.prueba.inditex.service.PriceServiceImpl;
 import com.prueba.inditex.service.dto.PriceDtoResponse;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mockito.BDDMockito;
-import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
