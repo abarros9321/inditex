@@ -1,0 +1,27 @@
+spring:
+  application:
+    name:inditex
+  datasource:
+    driver-class-name: org.h2.Driver
+    username: a
+    password:
+    url: "jdbc:h2:mem:inditex;DB_CLOSE_ON_EXIT=FALSE"
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.H2Dialect
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: create-drop
+
+demo:
+  app:
+    maxSlogans: 3
+    oneCallForTest: 1
+    userNotFoundError: "User not found"
+    maxNumberOfSloganReachedError: "this User have reach the maximun number of slogans"
+    userAlreadyRegisterError: "The user is already register"
+    incorrectUsernameOrPasswordError: "Incorrect username or password"
