@@ -4,6 +4,10 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.springframework.http.HttpStatus;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class InditexException extends RuntimeException {
@@ -14,4 +18,16 @@ public class InditexException extends RuntimeException {
         this.message = message;
         this.httpStatus = httpStatus;
     }
+
+    public static boolean isValidDate(String d, String dateFormat) {
+        DateFormat df = new SimpleDateFormat(dateFormat);
+        df.setLenient(false);
+        try {
+            df.parse(d);
+        } catch (ParseException e) {
+            return false;
+        }
+        return true;
+    }
+
 }

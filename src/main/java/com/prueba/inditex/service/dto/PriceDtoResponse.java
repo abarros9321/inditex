@@ -12,7 +12,6 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @Builder
 public class PriceDtoResponse {
-
     private Long productId;
     private Long brandId;
     private String priceValue;
